@@ -1,5 +1,4 @@
 let div6 = document.getElementsByClassName("div6")
-let div4 = document.querySelector(".div4")
 for (let i = 0; i < div6.length; i++) {
     div6[i].addEventListener("click", () => {
         div6[i].classList.add("border")
@@ -19,7 +18,6 @@ let div7 = document.getElementsByClassName("div7")
 
 for (let i = 0; i < input.length; i++) {
     form.addEventListener("submit", (e) => {
-
         if (input[i].value == "") {
             e.preventDefault()
             div6[i].classList.add("bord")
@@ -47,15 +45,17 @@ for (let i = 0; i < input.length; i++) {
                 img[2].style.display = "none"
                 div7[2].style.display = "none"
             } else {
-                div6[i].classList.add("bord")
-                div6[i].style.marginBottom = 0
+                div6[2].classList.add("bord")
+                div6[2].style.marginBottom = 0
                 div7[2].innerHTML = "Looks like this is not an email"
                 div7[2].style.display = "block"
-                img[i].style.display = "block"
+                img[2].style.display = "block"
             }
         }
 
         let emailId = document.getElementById("input")
         validateEmail(emailId)
+
+
     })
 }
