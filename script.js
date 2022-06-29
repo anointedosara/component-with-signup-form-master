@@ -59,3 +59,11 @@ for (let i = 0; i < input.length; i++) {
 
     })
 }
+
+form.addEventListener("submit", () => {
+    if (input[0].value != "" && input[1].value != "" && input[2].value != "" && input[3].value != "") {
+        alert("Congrats! You will hear from us shortly via the email you provided.")
+    } else {
+        alert("Complete the form to claim your Free Trial")
+    }
+})
